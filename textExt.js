@@ -52,7 +52,7 @@ class ScratchFileManager {
   exportTxtFile(string, name){
 
     //Script by Kamil Kiełczewski
-  
+
     let a = document.createElement('a');
     a.href = "data:application/octet-stream,"+encodeURIComponent(string);
     a.download = name + '.txt';
@@ -61,3 +61,9 @@ class ScratchFileManager {
   }
 
 }
+
+(function() {
+    var extensionInstance = new ScratchFileManager(window.vm.extensionManager.runtime)
+    var serviceName = window.vm.extensionManager._registerInternalExtension(extensionInstance)
+    window.vm.extensionManager._loadedExtensions.set(extensionInstance.getInfo().id, serviceName)
+})()
