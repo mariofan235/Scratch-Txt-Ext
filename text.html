@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<script>
+
+  //Script by Kamil Kiełczewski
+
+  let a = document.createElement('a');
+  a.href = "data:application/octet-stream,"+encodeURIComponent("My DATA");
+  a.download = 'abc.txt';
+  a.click();
+
+</script>
