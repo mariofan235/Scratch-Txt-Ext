@@ -1,10 +1,10 @@
 // MIT license
 
-const ArgumentType = require('../../extension-support/argument-type');
-const BlockType = require('../../extension-support/block-type');
-const TargetType = require('../../extension-support/target-type');
-
-const formatMessage = require('format-message');
+// const ArgumentType = require('../../extension-support/argument-type');
+// const BlockType = require('../../extension-support/block-type');
+// const TargetType = require('../../extension-support/target-type');
+//
+// const formatMessage = require('format-message');
 
 class ScratchFileManager {
 
