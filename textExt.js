@@ -18,7 +18,7 @@ class ScratchFileManager {
 
     return {
 
-      "id": "textExportConfig",
+      "id": "TxtFiles",
       "blocks": [{
           "opcode": "exportTxtFile",
           "blockType": 'command',
@@ -41,6 +41,12 @@ class ScratchFileManager {
 
           }
 
+      }, {
+
+        "opcode": "importTxtFile",
+        "blockType": 'command',
+        "text": "import text file and wait"
+
       }]
 
     }
@@ -51,14 +57,18 @@ class ScratchFileManager {
 
     //Script by Kamil Kiełczewski
 
-    console.log(arg);
-
-    console.log(arg.NAME);
-
     let a = document.createElement('a');
     a.href = "data:application/octet-stream,"+encodeURIComponent(arg.STRING);
     a.download = arg.NAME + '.txt';
     a.click();
+
+  }
+
+  importTxtFile(){
+
+    var button = document.createElement("input");
+    button.type = "file";
+    document.body.appendChild(button);
 
   }
 

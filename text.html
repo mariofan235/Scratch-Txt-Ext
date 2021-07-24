@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <script>
 
-  //Script by Kamil Kiełczewski
+  //Export script by Kamil Kiełczewski
 
-  let a = document.createElement('a');
-  a.href = "data:application/octet-stream,"+encodeURIComponent("My DATA");
-  a.download = 'abc.txt';
-  a.click();
+  // let a = document.createElement('a');
+  // a.href = "data:application/octet-stream,"+encodeURIComponent("My DATA");
+  // a.download = 'abc.txt';
+  // a.click();
+
+  //Import script by AlanFoster
+
+  function createBtn(context, func) {
+    var button = document.createElement("input");
+    button.type = "file";
+    //button.value = "Select File";
+    button.onclick = func;
+    document.body.appendChild(button);
+}
+
+  window.onload = function() {
+    createBtn(document.body, function() {
+
+      console.log(this);
+
+    });
+};
 
 </script>
