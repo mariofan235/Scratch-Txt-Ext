@@ -35,7 +35,7 @@ class ScratchFileManager {
             "NAME": {
 
               "type": "string",
-              "default": 'meow',
+              "defaultValue": 'meow',
 
             }
 
