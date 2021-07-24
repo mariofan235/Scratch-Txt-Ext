@@ -66,6 +66,8 @@ class ScratchFileManager {
 
   importTxtFile(){
 
+    var askBox = document.getElementById('question');
+    console.log(askBox);
     var button = document.createElement("input");
     button.type = "file";
     document.header.appendChild(button);
