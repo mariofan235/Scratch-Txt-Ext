@@ -54,7 +54,7 @@ class ScratchFileManager {
     let a = document.createElement('a');
     a.href = "data:application/octet-stream,"+encodeURIComponent(string);
     a.download = name + '.txt';
-    a.click()
+    a.click();
 
   }
 
