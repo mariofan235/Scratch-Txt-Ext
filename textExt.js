@@ -18,11 +18,11 @@ class ScratchFileManager {
 
     return {
 
-      "id": "txtFileConfig",
+      "id": "Text Files",
       "blocks": [{
           "opcode": "exportTxtFile",
           "blockType": 'command',
-          "text": 'export [STRING] with [NAME]',
+          "text": 'export text [STRING] with file name [NAME]',
           "arguements": {
 
             "STRING": {
@@ -50,6 +50,10 @@ class ScratchFileManager {
   exportTxtFile(string, name){
 
     //Script by Kamil Kiełczewski
+
+    console.log(string);
+
+    console.log(string.toString());
 
     let a = document.createElement('a');
     a.href = "data:application/octet-stream,"+encodeURIComponent(string);
