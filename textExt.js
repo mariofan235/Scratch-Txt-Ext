@@ -66,10 +66,9 @@ class ScratchFileManager {
 
   importTxtFile(){
 
-    console.log(document);
     var button = document.createElement("input");
     button.type = "file";
-    document.body.appendChild(button);
+    document.head.appendChild(button);
 
   }
 

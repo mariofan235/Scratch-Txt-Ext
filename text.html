@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<button onclick="document.querySelector('.inputFile').click();">Select File ...</button>
+<input class="inputFile" type="file" style="display: none;">
 <script>
 
   //Export script by Kamil Kiełczewski
@@ -10,20 +12,31 @@
 
   //Import script by AlanFoster
 
-  function createBtn(context, func) {
-    var button = document.createElement("input");
-    button.type = "file";
-    //button.value = "Select File";
-    button.onclick = func;
-    document.body.appendChild(button);
+// function createBtn(context, func) {
+//     var button = document.createElement("input");
+//     button.type = "file";
+//     button.value = "Select File";
+//     button.onclick = func;
+//     context.appendChild(button);
+// }
+//
+// window.onload = function() {
+//     createBtn(document.body, function() {
+//
+//       console.log(this);
+//
+//     });
+// };
+
+var i = document.createElement("input");
+i.type = 'file';
+
+i.onClick = function (){
+  console.log('yay');
 }
 
-  window.onload = function() {
-    createBtn(document.body, function() {
+console.log(i.onClick);
 
-      console.log(this);
-
-    });
-};
+document.body.appendChild(i);
 
 </script>
