@@ -18,7 +18,7 @@ class ScratchFileManager {
 
     return {
 
-      "id": "Text Files",
+      "id": "Text_Config",
       "blocks": [{
           "opcode": "exportTxtFile",
           "blockType": 'command',
