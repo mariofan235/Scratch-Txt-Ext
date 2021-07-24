@@ -21,7 +21,7 @@ class ScratchFileManager {
       id: "txtFileConfig",
       blocks: [{
           opcode: "exportTxtFile",
-          blockType: BlockType.COMMAND,
+          blockType: 'command',
           text: formatMessage({
             id: "exportFile",
             defaultMessage: 'export [STRING] with [NAME]',
