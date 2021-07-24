@@ -47,13 +47,13 @@ class ScratchFileManager {
 
   }
 
-  exportTxtFile(arg){
+  exportTxtFile({string, name}){
 
     //Script by Kamil Kiełczewski
 
     let a = document.createElement('a');
-    a.href = "data:application/octet-stream,"+encodeURIComponent(arg.STRING);
-    a.download = arg.NAME + '.txt';
+    a.href = "data:application/octet-stream,"+encodeURIComponent(string);
+    a.download = name + '.txt';
     a.click();
 
   }
