@@ -18,32 +18,24 @@ class ScratchFileManager {
 
     return {
 
-      id: "txtFileConfig",
+      "id": "txtFileConfig",
       "blocks": [{
-          opcode: "exportTxtFile",
+          "opcode": "exportTxtFile",
           "blockType": 'command',
-          text: formatMessage({
-            id: "exportFile",
-            defaultMessage: 'export [STRING] with [NAME]',
-            description: 'Label for "exportFile" block'
-          }),
-          arguements: {
+          "text": 'export [STRING] with [NAME]',
+          "arguements": {
 
-            STRING: {
+            "STRING": {
 
-              type: ArgumentType.STRING,
-              default: 'Hello World!'
+              "type": "string",
+              "defaultValue": 'Hello World!'
 
             },
 
-            NAME: {
+            "NAME": {
 
-              type: ArgumentType.STRING,
-              default: formatMessage({
-                id: "exportFile.NAME_default",
-                defaultMessage: 'meow',
-                description: 'Default for "NAME" arg for "exportTxtFile"'
-              }),
+              "type": "string",
+              "default": 'meow',
 
             }
 
