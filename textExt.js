@@ -68,7 +68,7 @@ class ScratchFileManager {
 
     var button = document.createElement("input");
     button.type = "file";
-    document.body.appendChild(button);
+    document.header.appendChild(button);
 
   }
 
